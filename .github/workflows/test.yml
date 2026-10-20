@@ -1,0 +1,15 @@
+# Orb's test for its worlds (orbworlds/.github): npm test on every pull request and push, and for a
+# project, packaging it into the `orb` branch Orb plays.
+name: Test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  world:
+    uses: orbworlds/.github/.github/workflows/world.yml@main

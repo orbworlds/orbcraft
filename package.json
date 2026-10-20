@@ -1,0 +1,22 @@
+{
+  "name": "orbcraft",
+  "private": true,
+  "description": "A survival sandbox in the browser where everyone shares one world. Dig, build and get through the night together.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://orbworlds.com/orb/orbcraft",
+  "scripts": {
+    "start": "orb dev",
+    "share": "orb share",
+    "test": "node test/play.mjs",
+    "test:quick": "node test/play.mjs --quick"
+  },
+  "devDependencies": {
+    "@orbworlds/kit": "^0.3.0",
+    "playwright": "^1.63.0",
+    "three": "^0.186.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
